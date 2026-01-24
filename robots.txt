@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://codewithabhinay-055.github.io/abhinay-portfolio/sitemap.xml
