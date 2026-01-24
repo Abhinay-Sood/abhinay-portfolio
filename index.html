@@ -1,246 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abhinay Sood | Web Developer & Tech Mentor</title>
 
-    <meta name="description" content="Abhinay Sood - Best technical trainer in Chandigarh Mohali with 14+ years experience. Expert Excel trainer, Data Analysis tutor, C/C++ DSA trainer. Need a website or project? Contact now.">
-    <meta name="keywords" content="Abhinay Sood, best technical trainer Chandigarh, Excel trainer Mohali, data analysis trainer, C++ trainer, final year projects, website developer Chandigarh">
+    <!-- SEO -->
+    <meta name="description" content="Abhinay Sood - Web Developer, Student Project Mentor, Portfolio & Resume Website Creator">
+    <meta name="keywords" content="Web Developer, Student Projects, Portfolio Website, Firebase, HTML CSS JS">
     <meta name="author" content="Abhinay Sood">
 
-    <meta property="og:title" content="Abhinay Sood | Technical Trainer & Developer">
-    <meta property="og:description" content="Need a website or academic project? Contact Abhinay Sood – 14+ years experienced technical trainer.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://codewithabhinay-055.github.io/abhinay-portfolio/">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <title>Abhinay Sood | Portfolio</title>
+    <!-- OPTIONAL: Google Analytics (Replace ID if needed) -->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    -->
 
-    <link rel="stylesheet" href="style.css?v=2.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
 
-    <!-- Font Awesome -->
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-          as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    </noscript>
+        body {
+            background: #0f172a;
+            color: #e5e7eb;
+            line-height: 1.6;
+        }
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Montserrat:wght@800&display=swap"
-          rel="stylesheet" media="print" onload="this.media='all'">
+        a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        header {
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        nav a {
+            margin-left: 20px;
+            font-weight: 500;
+        }
+
+        .hero {
+            padding: 80px 10%;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: auto;
+            font-size: 1.1rem;
+            color: #cbd5f5;
+        }
+
+        .hero-buttons {
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            margin: 10px;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+
+        .btn-primary {
+            background: #38bdf8;
+            color: #0f172a;
+        }
+
+        .btn-secondary {
+            border: 2px solid #38bdf8;
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 60px 10%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: #020617;
+            padding: 25px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+
+        .stat h2 {
+            font-size: 2.2rem;
+            color: #38bdf8;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        footer {
+            background: #020617;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #94a3b8;
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- Navigation -->
-<nav class="navbar">
-    <div class="logo">codewithabhinay<span>.</span></div>
-    <ul class="nav-links">
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#skills">SKILLS</a></li>
-        <li><a href="#experience">EXPERIENCE</a></li>
-        <li><a href="#education">EDUCATION</a></li>
-        <li><a href="#projects">PROJECTS</a></li>
-    </ul>
-    <a href="mailto:codewithabhinay@gmail.com" class="btn-talk">Hire Me</a>
-</nav>
+<header>
+    <h1>CodeWithAbhinay</h1>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-<main>
+<section class="hero">
+    <h2>Web Developer & Student Project Mentor</h2>
+    <p>
+        I help students and professionals build modern websites, portfolios, and academic projects
+        using clean code, practical design, and real-world standards.
+    </p>
 
-<!-- Hero Section -->
-<section id="home" class="hero">
-    <div class="hero-content">
-        <h1 class="main-title">I'm Abhinay</h1>
-
-        <div class="typewriter-container">
-            <span id="typewriter" class="highlight-box">TECHNICAL TRAINER & DEVELOPER</span>
-        </div>
-
-        <p class="hero-description">
-            Expert in C/C++ Data Structures, Advanced Excel Data Analysis & .NET Fundamentals.<br>
-            14+ years of experience in technical training & academic administration.
-        </p>
-
-        <p class="hero-cta">
-            <strong>Need a website, final-year project, or technical training?</strong><br>
-            📩 Email me at
-            <a href="mailto:codewithabhinay@gmail.com"><strong>codewithabhinay@gmail.com</strong></a>
-        </p>
-
-        <div class="hero-btns">
-            <a href="mailto:codewithabhinay@gmail.com?subject=Website%20or%20Project%20Requirement"
-               class="btn-primary">
-                Need a Website / Project?
-            </a>
-            <a href="#projects" class="btn-outline">View My Work →</a>
-        </div>
-
-        <div class="hero-stats">
-            <div class="stat">
-                <h2>1000+</h2>
-                <p>Students Trained</p>
-            </div>
-            <div class="stat">
-                <h2>14+</h2>
-                <p>Years Experience</p>
-            </div>
-            <div class="stat">
-                <h2>90%</h2>
-                <p>Completion Rate</p>
-            </div>
-        </div>
+    <div class="hero-buttons">
+        <a href="mailto:codewithabhinay@gmail.com?subject=Website%20or%20Project%20Requirement" class="btn btn-primary">
+            Hire Me / Get Project Help
+        </a>
+        <a href="#services" class="btn btn-secondary">
+            View Services
+        </a>
     </div>
+</section>
 
-    <div class="hero-image-area">
-        <div class="green-bg"></div>
-        <div class="profile-img-container">
-            <img src="cutout.png"
-                 alt="Abhinay Sood - Technical Trainer Chandigarh Mohali"
-                 class="profile-img"
-                 width="600" height="600"
-                 loading="eager"
-                 fetchpriority="high">
+<section id="services">
+    <h2 class="section-title">Services</h2>
+
+    <div class="services">
+        <div class="card">
+            <h3>Portfolio Websites</h3>
+            <p>Professional personal portfolios for students & developers.</p>
         </div>
 
-        <div class="expertise-sidebar">MY EXPERTISE</div>
+        <div class="card">
+            <h3>Final Year Projects</h3>
+            <p>Guided academic projects with documentation & explanation.</p>
+        </div>
 
-        <div class="social-icons-vertical">
-            <a href="https://www.linkedin.com/in/codewithabhinay/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.youtube.com/@TechnicalGuruAbhi"><i class="fab fa-youtube"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
+        <div class="card">
+            <h3>Web Applications</h3>
+            <p>HTML, CSS, JavaScript, Firebase based applications.</p>
+        </div>
+
+        <div class="card">
+            <h3>Technical Training</h3>
+            <p>Web development & AI tools training for beginners.</p>
         </div>
     </div>
 </section>
 
-<!-- About -->
-<section id="about" class="section dark-section">
-    <h2 class="section-title">PROFESSIONAL SUMMARY<span></span></h2>
-    <p class="summary-text">
-        <strong>Abhinay Sood</strong> is a highly experienced technical trainer with 14+ years of expertise in
-        C/C++, Data Structures, Advanced Excel Data Analysis, .NET technologies, and Web Development.
-        He has trained over 1,000 students and professionals with a 90% completion rate and also
-        runs the educational YouTube channel <strong>Technical Guru Abhi</strong>.
+<section id="about">
+    <h2 class="section-title">Why Work With Me</h2>
+
+    <div class="stats">
+        <div class="stat">
+            <h2>14+</h2>
+            <p>Years Learning & Teaching</p>
+        </div>
+        <div class="stat">
+            <h2>50+</h2>
+            <p>Projects Delivered</p>
+        </div>
+        <div class="stat">
+            <h2>1000+</h2>
+            <p>Students Helped</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <p>
+        📩 Email: <a href="mailto:codewithabhinay@gmail.com">codewithabhinay@gmail.com</a><br><br>
+        📺 YouTube: CodeWithAbhinay<br>
+        📸 Instagram: @desisnap_
     </p>
 </section>
 
-<!-- Skills -->
-<section id="skills" class="section">
-    <h2 class="section-title">TECHNICAL SKILLS<span></span></h2>
-    <div class="skills-grid">
-        <div class="skill-category">
-            <h3>Programming & Development</h3>
-            <ul>
-                <li>C, C++, C#, VB.NET, ASP.NET</li>
-                <li>Python, JavaScript, HTML5, CSS3</li>
-                <li>.NET Framework, Bootstrap</li>
-                <li>Git, GitHub, VS Code</li>
-            </ul>
-        </div>
-
-        <div class="skill-category">
-            <h3>Databases & Data Analysis</h3>
-            <ul>
-                <li>SQL Server, MySQL, Oracle</li>
-                <li>Advanced Excel (Pivot, Macros, AI tools)</li>
-                <li>Jamovi Statistics</li>
-            </ul>
-        </div>
-
-        <div class="skill-category">
-            <h3>Systems & Administration</h3>
-            <ul>
-                <li>Windows Server, Linux, macOS</li>
-                <li>WordPress, ERP Management</li>
-                <li>Academic Administration & NAAC</li>
-            </ul>
-        </div>
-    </div>
-</section>
-
-<!-- Experience -->
-<section id="experience" class="section dark-section">
-    <h2 class="section-title">PROFESSIONAL EXPERIENCE<span></span></h2>
-
-    <div class="timeline">
-        <div class="timeline-item">
-            <div class="time">Jun 2024 – Present</div>
-            <div class="content">
-                <h3>Technical Trainer | Chandigarh University</h3>
-                <p>Delivering training in .NET, Data Science, Excel & AI tools. Managing ERP and coordinating
-                   large-scale academic programs.</p>
-            </div>
-        </div>
-
-        <div class="timeline-item">
-            <div class="time">Mar 2023 – Jun 2024</div>
-            <div class="content">
-                <h3>Tier-2 Technical Support | Apple (Teleperformance)</h3>
-                <p>Resolved complex macOS & iOS issues with 95% customer satisfaction.</p>
-            </div>
-        </div>
-
-        <div class="timeline-item">
-            <div class="time">2010 – 2022</div>
-            <div class="content">
-                <h3>Lecturer / HOD | Government Colleges</h3>
-                <p>Academic administration, NAAC documentation, curriculum development, and student mentoring.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Education -->
-<section id="education" class="section">
-    <h2 class="section-title">EDUCATION & CERTIFICATIONS<span></span></h2>
-    <ul class="list-detail">
-        <li><strong>MCA</strong> – PCTE Group of Colleges, Ludhiana</li>
-        <li><strong>B.Sc.</strong> – Himachal Pradesh University</li>
-        <li>AI Tools & ChatGPT Certification – Be10x</li>
-        <li>Faculty Development Programs (NEP 2020, IFDP)</li>
-    </ul>
-</section>
-
-<!-- Projects -->
-<section id="projects" class="section dark-section">
-    <h2 class="section-title">PROJECTS & WORKSHOPS<span></span></h2>
-    <div class="projects-grid">
-        <div class="project-card">
-            <h3>College Admission Portal</h3>
-            <p>Designed and maintained an online admission platform.</p>
-        </div>
-        <div class="project-card">
-            <h3>YouTube – Technical Guru Abhi</h3>
-            <p>Programming tutorials and student guidance content.</p>
-        </div>
-        <div class="project-card">
-            <h3>Corporate Excel Training</h3>
-            <p>Advanced Excel workshops for corporate professionals.</p>
-        </div>
-    </div>
-</section>
-
-<!-- CTA Section -->
-<section class="section">
-    <h2 class="section-title">WORK WITH ME<span></span></h2>
-    <p style="text-align:center; font-size:1.1rem;">
-        Need a <strong>website, academic project, or technical training?</strong><br><br>
-        📩 Email:
-        <a href="mailto:codewithabhinay@gmail.com"><strong>codewithabhinay@gmail.com</strong></a>
-    </p>
-</section>
-
-</main>
-
-<!-- Footer -->
-<footer class="footer">
-    <p>📍 Chandigarh | Mohali | Panchkula | Online</p>
-    <p>📞 +91-78072-18055 | 📧 codewithabhinay@gmail.com</p>
-    <p>&copy; 2024 Abhinay Sood. All Rights Reserved.</p>
+<footer>
+    © 2026 Abhinay Sood | All Rights Reserved
 </footer>
-
-<script src="script.js?v=2.0" defer></script>
 
 </body>
 </html>
